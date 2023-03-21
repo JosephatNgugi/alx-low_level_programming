@@ -8,7 +8,7 @@
 int main(void)
 {
 	char arr[] = "_putchar";
-	int i;
+	int i = 0;
 
 	do {
 		_putchar(arr[i]);
