@@ -7,6 +7,14 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
-	return 0;
+	_putchar();
+	/* char arr[] = "_putchar"; */
+	/* int i; */
+
+	/* do { */
+	/* 	_putchar('arr[i]'); */
+	/* 	i++; */
+	/* } while (arr[i] != '\0'); */
+	/* _putchar('\n'); */
+	return (0);
 }
