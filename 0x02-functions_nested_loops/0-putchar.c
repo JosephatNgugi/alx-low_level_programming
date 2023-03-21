@@ -11,7 +11,7 @@ int main(void)
 	int i;
 
 	do {
-		_putchar('arr[i]');
+		_putchar(arr[i]);
 		i++;
 	} while (arr[i] != '\0');
 	_putchar('\n');
