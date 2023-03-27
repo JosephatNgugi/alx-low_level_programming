@@ -11,11 +11,11 @@
 
 int main(void)
 {
+	int i;
 	char password[PASSWORD_LENGTH + 1];
 	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!$?*#";
 
 	srand(time(0));
-	int i;
 
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
