@@ -1,5 +1,5 @@
 /**
- * _strcat - concatenates two strings by appending the src
+ * _strncat - concatenates two strings by appending the src
  * to dest string using specified number of bytes,
  * @dest: Pointer to the dest character array
  * @src: Pointer to the src character array
@@ -24,5 +24,5 @@ char *_strncat(char *dest, char *src, int n)
 
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
