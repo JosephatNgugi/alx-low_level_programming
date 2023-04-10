@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 	if (cents < 0)
 	{
 		printf("%d\n", coins);
+		return (0);
 	}
 
 	while (cents > 0)
