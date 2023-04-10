@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		}
 		else
 			cents--;
-		coins++
+		coins++;
 	}
 	printf("%d\n", coins);
 	return (0);
