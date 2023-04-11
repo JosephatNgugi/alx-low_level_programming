@@ -22,6 +22,9 @@ char *_strdup(char *str)
 
 	myStr = malloc(sizeof(*str) * (len + 1));
 
+	if (myStr == NULL)
+		return (NULL);
+
 	for (i = 0; i <= len; i++)
 		myStr[i] = str[i];
 
