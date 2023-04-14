@@ -6,7 +6,7 @@ char *_memset(char *s, char b, unsigned int n);
  * @nmemb: Number of elements in array
  * @size: Size in bytes of each element
  *
- * Returns: Pointer to the allocated memory,
+ * Return: Pointer to the allocated memory,
  * NULL if malloc fails, or if nmemb or size is 0
  */
 
