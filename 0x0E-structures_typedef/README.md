@@ -38,11 +38,11 @@ Here, we are assigning values to the age and salary members of the employee1 var
 
 - The Arrow(->) operator exists to access the members of the structure using pointers.
 
-`
+``
 employee2->name = "John Doe";
 employee2->age = 30;
 employee2->salary = 56000.00;
-`
+``
 Here, we are assigning values to the name, age and salary members of the employee2 variable.
 
 * Structures can also be passed to functions as arguments, just like any other data type. This allows us to create more complex data structures that can be used to store and manipulate data.
@@ -54,24 +54,24 @@ Here, we are assigning values to the name, age and salary members of the employe
 `
 typedef int my_int;
 `
-- This creates a new data type called `my_int' that is an alias for the `int` data type.
+- This creates a new data type called `my_int` that is an alias for the `int` data type.
 
 We can also use `typedef` to create new names for structures. This allows us to define a structure once and use it in multiple parts of our code, without having to repeat the structure definition. For example:
 
-`
+``
 typedef struct {
    char name[50];
    int age;
    float salary;
    char address[100];
 } employee;
-`
+``
 
 or
 
-`
+``
 typedef struct employee employee;
-`
+``
 - Here, we are creating a new data type called employee that is an alias for the struct employee data type that we defined earlier.
 
 To use the data type to define structure variables directly:
