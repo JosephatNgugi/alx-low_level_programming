@@ -38,12 +38,15 @@ int main(int argc, char *argv[])
 void print_opcodes(int num_of_bytes)
 {
 	int i;
-	int (*main_addr) = &main;
+	int (*main_addr)(int, char **) = main;
 	unsigned char *code_ptr = (unsigned char *) main_addr;
 
 	for (i = 0; i < num_of_bytes; i++)
 	{
-		printf("%02x ", code_ptr[i]);
+		printf("%02x", code_ptr[i]);
+		if (i == num_of_bytes - 1)
+			continue;
+		printf(" ");
 	}
 	printf("\n");
 }
