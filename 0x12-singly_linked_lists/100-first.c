@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void _constructor()__attribute__((constructor));
+void _constructor(void)__attribute__((constructor));
 /**
  * _constructor - Prints a String of text before the main
  * function is executed.
