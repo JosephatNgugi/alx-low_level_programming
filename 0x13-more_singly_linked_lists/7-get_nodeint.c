@@ -6,21 +6,25 @@
  * @head: Pointer to the first node element
  * @index: Integer value representing the nth element position
  *
- * Return: The nth node of th Linked list
+ * Return: The nth node of th Linked list,
+ * NULL if node does not exist
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *node;
-	unsigned int i;
+	unsigned int i = 0;
+
+	if (head == NULL || index == 0)
+		return (NULL);
 
 	node = head;
-	if (node == NULL)
-		return (NULL);
-	while (node != NULL && i < index)
+	while (node != NULL)
 	{
+		if (i == index)
+			return (node);
 		node = node->next;
 		i++;
 	}
 
-	return (node);
+	return (NULL);
 }
