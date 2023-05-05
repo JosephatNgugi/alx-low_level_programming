@@ -6,15 +6,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i = 0;
+	if (n > 1)
+		print_binary(n >> 1);
 
-	while (n != '\0')
-	{
-		if (n & (1 << i))
-			_putchar('1');
-		else
-			_putchar('0');
-		i++;
-	}
-	_putchar('\n');
+	_putchar((n & 1) + '0' );
 }
