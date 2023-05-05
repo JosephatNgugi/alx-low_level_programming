@@ -5,6 +5,7 @@
 #include <stddef.h>
 
 /******** Function Prototypes ********/
+int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 int get_endianness(void);
 void print_binary(unsigned long int n);
