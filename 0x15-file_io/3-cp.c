@@ -5,6 +5,8 @@
 
 #define BUFSIZE 1024
 
+void print_error(const char *message);
+int copy_file(const char *file_from, const char *file_to);
 /**
  * msin - Entry point
  * @argc: Argument count
