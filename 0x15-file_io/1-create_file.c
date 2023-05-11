@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 	{
 		len = _strlen(text_content);
-		written_chars = write(fd, text_content, len + 1);
+		written_chars = write(fd, text_content, len);
 		if (written_chars == -1 || written_chars != len)
 		{
 			close(fd);
@@ -47,7 +47,7 @@ int _strlen(char *str)
 	int len = 0;
 
 	while (*str != '\0')
-		len++;
+		len++, str++;
 
 	return (len);
 }
